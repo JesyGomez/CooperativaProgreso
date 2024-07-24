@@ -1,125 +1,220 @@
-body {
-    font-family: 'Courier New', Courier, monospace;
-    background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
-    padding: 0;
+/* Reset */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Tipografía y Fondo */
+body {
+    font-family: 'Roboto', sans-serif; /* Tipografía moderna */
+    background: linear-gradient(to right, #f7f8fa, #e1e8ed); /* Fondo más suave */
+    color: #333;
+    line-height: 1.6;
+    padding: 20px; /* Añadir espacio alrededor del contenido principal */
+}
+
+/* Header */
 header {
     text-align: center;
+    background-color: #333;
+    padding: 20px 0; /* Aumentar el padding superior e inferior */
+    margin-bottom: 30px; /* Espacio debajo del header */
 }
 
+header h1 {
+    color: #92a4ff;
+    font-size: 3em;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: color 0.3s ease; /* Transición de color */
+}
+
+header h1:hover {
+    color: #fff;
+}
+
+/* Navegación */
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
-}
-.lista{
-    display: block;
+    background-color: #444; /* Color de fondo actualizado */
+    border-bottom: 3px solid #92a4ff; /* Bordes inferiores */
+    margin-bottom: 20px; /* Espacio debajo del menú */
 }
 
-li {
+ul li {
     float: left;
 }
 
-li a {
+ul li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 20px; /* Ajuste de espaciado */
     text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones */
 }
 
-li a:hover:not(.active) {
-    background-color: #111;
+ul li a:hover {
+    background-color: #575757; /* Color de hover */
+    color: #92a4ff; /* Color de texto de hover */
 }
 
-.active {
-    background-color: #92a4ff;
+ul li a.active {
+    background-color: #92a4ff; /* Color activo */
+    color: #fff; /* Color de texto activo */
 }
 
-h1 {
-    background-color: black;
-    padding: 10px;
-    margin: 0;
-    color: #92a4ff;
-}
-
+/* Estilos de Títulos */
 h2 {
-    font-size: 24px;
-    margin: 15px; /* Quité el espacio entre el 15 y el px */
+    font-size: 2em;
+    margin: 20px 0; /* Márgenes */
     padding: 0;
+    color: #444; /* Color del texto */
+    text-align: center; /* Centrar los subtítulos */
 }
 
+/* Texto */
 p {
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 1em;
     margin-bottom: 20px;
+    color: #555;
+    text-align: justify; /* Justificar el texto */
 }
-
 .image {
     float: right;
     margin: 0 0 20px 20px;
-    max-width: 25%;
+    max-width: 30%;
     height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    border-radius: 10px; /* Bordes redondeados */
+    transition: transform 0.3s ease; /* Transición */
 }
 
 .image2 {
     float: left;
     margin: 0 20px 20px 0;
-    max-width: 25%;
+    max-width: 30%;
     height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    border-radius: 10px; /* Bordes redondeados */
+    transition: transform 0.3s ease; /* Transición */
 }
 
+.image:hover,
+.image2:hover {
+    transform: scale(1.05); /* Efecto de zoom */
+}
+
+/* Artículo */
 .article {
     float: left;
-    width: 70%;
-    background-color: #FFF;
-    padding: 10px;
-    margin: 10px;
-    border: 1px solid #CCC;
+    width: 65%; /* Ajustar el ancho para más espacio */
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease; /* Transición */
 }
 
-.footer {
+.article:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px); /* Efecto de elevación */
+}
+
+/* Footer */
+.footer p{
     background-color: #333;
-    color: #FFF;
-    padding: 10px;
+    color: white;
+    padding: 20px;
     text-align: center;
     clear: both;
+    border-top: 3px solid #eef0f9;
+    margin-top: 40px; /* Espacio superior del footer */
 }
 
-input[type=text],
-input[type=email],
+/* Formularios */
+input[type='text'],
+input[type='email'],
 textarea,
 select {
     width: 100%;
-    padding: 12px 20px;
+    padding: 12px 15px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    transition: border-color 0.3s ease;
 }
 
-input[type=submit] {
+input[type='text']:focus,
+input[type='email']:focus,
+textarea:focus,
+select:focus {
+    border-color: #92a4ff; /* Color del borde al enfocar */
+}
+
+input[type='submit'] {
     width: 100%;
-    background-color: #4CAF50;
+    background-color: #92a4ff;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-input[type=submit]:hover {
-    background-color: #45a049;
+input[type='submit']:hover {
+    background-color: #6f88ff; /* Color de fondo al pasar el ratón */
 }
 
+/* Contenedor del Formulario */
 div.contenedor-formulario {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
+    border-radius: 10px;
+    background-color: #f7f7f7;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 40px auto; /* Márgenes más amplios */
+    max-width: 600px;
+    transition: transform 0.3s ease;
+}
+
+div.contenedor-formulario:hover {
+    transform: translateY(-5px); /* Efecto de elevación */
+}
+
+/* Responsividad */
+@media screen and (max-width: 768px) {
+    ul li {
+        float: none;
+        width: 100%;
+    }
+
+    .article {
+        width: 100%; /* Ajuste de la anchura al 100% para pantallas pequeñas */
+        margin: 20px 0; /* Espaciado superior e inferior */
+    }
+
+    .image,
+    .image2 {
+        max-width: 100%; /* Ajuste de las imágenes al 100% del ancho */
+        margin: 20px 5px; /* Ajuste de márgenes */
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
 }
