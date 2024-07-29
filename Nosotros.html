@@ -18,6 +18,16 @@
                 <li> <a href="preferencia.html">Preferencia</a></li>
                 <li><a class="active" href="Nosotros.html">Nosotros</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
+                <!-- Barra de búsqueda -->
+                <li class="search-bar-container">
+                    <form id="search-form" class="search-bar" role="search" aria-label="Formulario de búsqueda">
+                        <label for="search-input" class="visually-hidden">Buscar</label>
+                        <input type="search" id="search-input" placeholder="Buscar..." aria-label="Buscar">
+                        <button type="submit" aria-label="Iniciar búsqueda">🔍</button>
+                    </form>
+                    <!-- Contenedor para mostrar el mensaje cuando no se encuentra la palabra -->
+                    <div id="search-message" class="search-message"></div>
+                </li>
             </ul>
 
         </nav>
@@ -64,5 +74,8 @@
     </footer>
 
 </body>
+    <!-- Script de búsqueda -->
+    <script src="assets/script/script.js">
+    </script>
 
 </html>

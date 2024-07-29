@@ -14,61 +14,48 @@
         <h1>Cooperativa de Trabajo "Progreso"</h1>
         <nav>
             <ul>
-                <li> <a class="active" href="index.html">Inicio</a></li>
-                <li> <a href="preferencia.html">Preferencia</a></li>
-                <li><a href="Nosotros.html">Nosotros</a></li>
+                <li><a class="active" href="index.html">Inicio</a></li>
+                <li><a href="preferencia.html">Preferencia</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
+                <!-- Barra de búsqueda -->
+                <li class="search-bar-container">
+                    <form id="search-form" class="search-bar" role="search" aria-label="Formulario de búsqueda">
+                        <label for="search-input" class="visually-hidden">Buscar</label>
+                        <input type="search" id="search-input" placeholder="Buscar..." aria-label="Buscar">
+                        <button type="submit" aria-label="Iniciar búsqueda">🔍</button>
+                    </form>
+                    <!-- Contenedor para mostrar el mensaje cuando no se encuentra la palabra -->
+                    <div id="search-message" class="search-message"></div>
+                </li>
             </ul>
-
         </nav>
     </header>
-    <p></p>
-    <h2>Tu Socio en Todas las Mejoras!
-    </h2>
-    <hr>
-    <article class="container">
-        <h3>Nuestra Historia</h3>
-        <img class="image" src="assets/logo.luminoso.jpg" alt="Logo luminoso">
-        <p>Fundada por tres apasionados expertos en sus respectivos campos, "Cooperativa Progreso" nació en el corazón
-            de Marcos Paz, provincia de Buenos Aires, con una visión compartida de mejorar las vidas de las personas a
-            través de la excelencia en los servicios de mejora, refacción, construcción y limpieza. </p>
-        <img class="image2" src="assets/arboldemanosmultiples.jpeg" alt="Arbol de manos">
-        <p>Cada fundador aporta una valiosa experiencia y conocimientos únicos, creando un equipo diverso y comprometido
-            con la calidad y la satisfacción del cliente.</p>
-        <p>La <b>cooperativa</b> surgió de la amistad y el sueño común de tres amigos, cada uno especializado en un área
-            esencial: uno se dedicaba al ámbito de la seguridad, otro se destacaba en el complejo mundo del
-            señalamiento vial, mientras que el tercero sobresalía en las áreas de administración, conducción y
-            polifuncionalidad. A medida que compartían sus experiencias y conocimientos, surgió un sueño común entre
-            ellos: la idea audaz de fusionar sus fuerzas y habilidades para formar una entidad que pudiera marcar la
-            diferencia en el mundo de los servicios. Con una pasión compartida por la excelencia y un deseo ferviente de
-            hacer contribuciones significativas, estos tres amigos decidieron convertir este sueño en realidad y juntos
-            decidieron unir sus fuerzas y habilidades para ofrecer soluciones integrales y personalizadas a las
-            necesidades de sus clientes, tanto en el sector público como en el privado.</p>
-        <h4>Uniendo Fuerzas para Ofrecer Soluciones Integrales y Personalizada</h4>
-        <img class="image" src="assets/hombrecitocargando.jpeg" alt="Cargando proyectos">
-        <p>Con esta visión en mente, decidieron fundar <i>Cooperativa Progreso</i>. Al unir sus conocimientos
-            especializados, no solo crearon un equipo diverso, sino también una fuente inagotable de habilidades
-            complementarias. Esta colaboración única les permitió ofrecer soluciones integrales y personalizadas que se
-            adaptaban perfectamente a las necesidades de sus clientes, ya fueran del sector público o privado.
-            La cooperativa se convirtió en el resultado tangible de su dedicación y amistad, transformando ideas
-            abstractas en proyectos concretos y exitosos. Juntos, no solo superaron las expectativas de sus clientes,
-            sino que también establecieron un estándar de calidad y profesionalismo que se convirtió en el sello
-            distintivo de <i>Cooperativa Progreso</i>.
-            Esta unión de mentes creativas y habilidades diversas no solo dio lugar a una empresa, sino que también creó
-            una familia profesional unida por un objetivo común: ofrecer servicios que transforman, mejoran y enriquecen
-            las vidas de las personas a través de la excelencia y la dedicación inquebrantable.
-            Así es como el sueño compartido de tres amigos se convirtió en la base sólida sobre la cual se construyó
-            <i>Cooperativa Progreso</i>, una entidad que sigue creciendo y prosperando gracias a la pasión, el
-            compromiso y
-            la determinación que definen su esencia.
-        </p>
-    </article>
 
+    <main>
+        <section>
+            <h2>Tu Socio en Todas las Mejoras!</h2>
+            <article class="container">
+                <h3>Nuestra Historia</h3>
+                <img class="image" src="assets/logo.luminoso.jpg" alt="Logo luminoso">
+                <p>Fundada por tres apasionados expertos en sus respectivos campos, "Cooperativa Progreso" nació en el corazón de Marcos Paz, provincia de Buenos Aires, con una visión compartida de mejorar las vidas de las personas a través de la excelencia en los servicios de mejora, refacción, construcción y limpieza.</p>
+                <img class="image2" src="assets/arboldemanosmultiples.jpeg" alt="Árbol de manos">
+                <p>Cada fundador aporta una valiosa experiencia y conocimientos únicos, creando un equipo diverso y comprometido con la calidad y la satisfacción del cliente.</p>
+                <p>La <b>cooperativa</b> surgió de la amistad y el sueño común de tres amigos, cada uno especializado en un área esencial: uno se dedicaba al ámbito de la seguridad, otro se destacaba en el complejo mundo del señalamiento vial, mientras que el tercero sobresalía en las áreas de administración, conducción y polifuncionalidad. A medida que compartían sus experiencias y conocimientos, surgió un sueño común entre ellos: la idea audaz de fusionar sus fuerzas y habilidades para formar una entidad que pudiera marcar la diferencia en el mundo de los servicios. Con una pasión compartida por la excelencia y un deseo ferviente de hacer contribuciones significativas, estos tres amigos decidieron convertir este sueño en realidad y juntos decidieron unir sus fuerzas y habilidades para ofrecer soluciones integrales y personalizadas a las necesidades de sus clientes, tanto en el sector público como en el privado.</p>
+                <h4>Uniendo Fuerzas para Ofrecer Soluciones Integrales y Personalizadas</h4>
+                <img class="image" src="assets/hombrecitocargando.jpeg" alt="Cargando proyectos">
+                <p>Con esta visión en mente, decidieron fundar <i>Cooperativa Progreso</i>. Al unir sus conocimientos especializados, no solo crearon un equipo diverso, sino también una fuente inagotable de habilidades complementarias. Esta colaboración única les permitió ofrecer soluciones integrales y personalizadas que se adaptaban perfectamente a las necesidades de sus clientes, ya fueran del sector público o privado. La cooperativa se convirtió en el resultado tangible de su dedicación y amistad, transformando ideas abstractas en proyectos concretos y exitosos. Juntos, no solo superaron las expectativas de sus clientes, sino que también establecieron un estándar de calidad y profesionalismo que se convirtió en el sello distintivo de <i>Cooperativa Progreso</i>. Esta unión de mentes creativas y habilidades diversas no solo dio lugar a una empresa, sino que también creó una familia profesional unida por un objetivo común: ofrecer servicios que transforman, mejoran y enriquecen las vidas de las personas a través de la excelencia y la dedicación inquebrantable. Así es como el sueño compartido de tres amigos se convirtió en la base sólida sobre la cual se construyó <i>Cooperativa Progreso</i>, una entidad que sigue creciendo y prosperando gracias a la pasión, el compromiso y la determinación que definen su esencia.</p>
+            </article>
+        </section>
+    </main>
 
     <footer class="footer">
         <p>Jesica Gomez - Derechos reservados &copy; 2023</p>
     </footer>
 
+    <!-- Script de búsqueda -->
+    <script src="assets/script/script.js">
+    </script>
 </body>
 
 </html>

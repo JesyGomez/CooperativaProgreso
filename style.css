@@ -192,6 +192,85 @@ div.contenedor-formulario:hover {
     transform: translateY(-5px); /* Efecto de elevación */
 }
 
+/* Estilos para la barra de búsqueda */
+.search-bar-container {
+    float: right; /* Flota la barra de búsqueda hacia la derecha */
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="search"] {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 8px;
+    /* margin-top: 3px; */
+    flex-grow: 1; /* Flexibilidad para adaptarse al contenedor */
+}
+
+.search-bar button {
+    background-color: #92a4ff;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #45a049;
+}
+
+/* Clase para ocultar visualmente elementos (para accesibilidad) */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+/* Clase para ocultar visualmente elementos (para accesibilidad) */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+/* Estilo para resaltar la palabra encontrada */
+.highlight {
+    font-weight: bold;
+    color: red; /* Resaltar en rojo */
+}
+
+/* Estilo para el mensaje de búsqueda */
+.search-message {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    display: none; /* Ocultar por defecto */
+    position: absolute; /* Posición absoluta para superponerse al contenido */
+    right: 0; /* Alineación derecha en relación al contenedor padre */
+    top: 50px; /* Ajusta este valor para controlar la posición vertical del mensaje */
+    z-index: 1000; /* Asegura que el mensaje esté por encima de otros elementos */
+    width: max-content; /* Ajusta el ancho al contenido del mensaje */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para un mejor enfoque */
+}
+
+
+
 /* Responsividad */
 @media screen and (max-width: 768px) {
     ul li {
